@@ -1,0 +1,101 @@
+body
+{
+background-color:#d0e4fe;
+}
+h1
+{
+color:orange;
+text-align:center;
+font-family:"Times New Roman";
+font-size:40px;
+}
+h3
+{
+color:orange;
+text-align:center;
+}
+
+p
+{
+color:black;
+text-align:center;
+}
+
+ul.a
+{
+width: 5%;
+margin: auto;
+color:blue;}
+ul.b
+{
+width: 5%;
+margin: auto;
+color:green;
+}
+ul.c
+{
+width: 5%;
+margin: auto;
+color:red;}
+ul.d
+{
+width: 5%;
+margin: auto;
+color:purple;}
+ul.e
+{
+width: 5%;
+margin: auto;
+color:blue;}
+ul.f
+{
+width: 5%;
+margin: auto;
+color:darkblue;}
+ul.g
+{
+width: 5%;
+margin: auto;
+color:blue;}
+ul.h
+{
+width: 5%;
+margin: auto;
+color:green;}
+ul.i
+{
+width: 5%;
+margin: auto;
+color:red;}
+ul.j
+{
+width: 5%;
+margin: auto;
+color:purple;}
+ul.k
+{
+width: 5%;
+margin: auto;
+color:blue;}
+ #abc
+{
+color:blue;
+text-align:left;}
+div
+{
+color:green;
+text-align:center;} 
+#test
+{
+text-align:left;
+}
+form
+{
+text-align:center;
+}
+
+#detteerentest
+{ 
+text-align:center;
+color:darkblue;
+}
