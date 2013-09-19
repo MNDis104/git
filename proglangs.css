@@ -1,101 +1,42 @@
-body
+/*Proglangs.css V2.0: Her har jeg endret alt for å tilpasse kravspesifikasjonene i henhold til oppgaven gitt i LAB2  */
+body /*Beskriver bakgrunnsfarge og font for hele siden*/
 {
+color:darkblue;
 background-color:#d0e4fe;
+padding-left: 11em;
+font-family: Georgia, "Times New Roman",Times,serif;
 }
-h1
+ul.meny /* possisjonerer ul menyen på riktig side og hvordan den skal være*/ 
 {
-color:orange;
-text-align:center;
-font-family:"Times New Roman";
+list-style-type: none;
+padding: 0;
+margin: 0;
+color:darkblue;
+position:absolute;
+top:2em;
+left: 1em;
+width: 9em;
+}
+ ul.meny li /*Gir menylisten en styling - Menyvalg*/
+ {
+background: white;
+margin: 0.5em 0;
+padding: 0.3em;
+border-right: 1em solid black
+}
+address /*Laget et skille mellom siden og adressebaren*/
+{
+margin-top: 1em; 
+padding-top: 1em;
+border-top: thin dotted 
+}
+h1 /*spesifiserer stylingen til denne spesifike headingen*/
+{
 font-size:40px;
 }
-h3
+h3 /*spesifiserer stylingen til denne spesifike headingen*/
 {
-color:orange;
-text-align:center;
-}
-
-p
-{
-color:black;
-text-align:center;
-}
-
-ul.a
-{
-width: 5%;
-margin: auto;
-color:blue;}
-ul.b
-{
-width: 5%;
-margin: auto;
-color:green;
-}
-ul.c
-{
-width: 5%;
-margin: auto;
-color:red;}
-ul.d
-{
-width: 5%;
-margin: auto;
-color:purple;}
-ul.e
-{
-width: 5%;
-margin: auto;
-color:blue;}
-ul.f
-{
-width: 5%;
-margin: auto;
-color:darkblue;}
-ul.g
-{
-width: 5%;
-margin: auto;
-color:blue;}
-ul.h
-{
-width: 5%;
-margin: auto;
-color:green;}
-ul.i
-{
-width: 5%;
-margin: auto;
-color:red;}
-ul.j
-{
-width: 5%;
-margin: auto;
-color:purple;}
-ul.k
-{
-width: 5%;
-margin: auto;
-color:blue;}
- #abc
-{
-color:blue;
-text-align:left;}
-div
-{
-color:green;
-text-align:center;} 
-#test
-{
-text-align:left;
-}
-form
-{
-text-align:center;
-}
-
-#detteerentest
-{ 
-text-align:center;
-color:darkblue;
+position:relative;
+top:-25px;
+font-size:20px;
 }
