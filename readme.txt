@@ -1,8 +1,25 @@
-Filene i denne repositoren er en webapplikasjon for å presentere programmeringsspråk. Vedlagdte filer er:
-proglangs.html - Sideoppsett for brukeren å se via en internettleser(browser)
-proglangs.css  - Definerer farge, possition og styling til elementene i HTMLen
-proglangs.js   - dynamisk endrer elementer inni HTML. Reagerer når brukeren foretar seg valg inne i HTML.
-Readme.txt     - Forteller noe om hvilke filer som er vedlagdt og info om hva filene inneholder + Svar på kontrollspørsmål gitt av Janis  
+Filene i denne repositoren er en webapplikasjon for å øve på Jquery og Canvas
+Lab3_v1.html: Reagerer på piltastene opp,ned,venstre,høyre
+Lab3_v2.html: Reagerer på museklikk og displayer resultatene
+Lab3_v3.html: Reagerer på museklikk, displayer resultatene og bergener musens position innenfor et avgrenset område i vinduet. 
+Lab3.css: Styling
+Readme.txt: Forteller noe om hvilke filer som er vedlagdt og info om hva filene inneholder + Svar på kontrollspørsmål gitt av Janis  
+
+
+Kontrollspørsmål LAB3 
+0) Fordelen med eksisterende JavaScript biblotek er at en lettere (mindre arbeid dvs. klassene kan arve egenskaper fra hverandre.) kan endre siden dynamisk og vet at biblotekene fungerer. Samt at de forskjellige browserene implementerer ELM anderledes. 
+
+1) Sterke sider til HTML/Css: Det er lett i HTML/ Css å endre tekst, samt gi disse en styling. Det er viktig for websider å ha en solid bygd HTML i bunn. Ihvertfall får svært mange websider. HTML/Css er altså stukturen på hvordan siden vil se ut.
+
+Sterke sider til Canvas: Canvas trenger ikke å følge det hierarkiske struktuelle oppbyggingen til HTML/css. Og jobber derfor raskere enn HTML/css. Canvas er også/ har også en høyere pixel nivå av kontroll av grafikk og tekst på de aktuelle sidene. 
+
+Det er meningsfult å bruke Canvas, om en f.eks vil på detaljnivå konsistent og konstant definere elementer, det være f.eks dens plassering og utseende. 
+
+2) 
+
+HTML5 Canvas sin grafiske presentasjonsmåte:
+Canvas i HTML er best egnet for raske realtidsapplikasjoner. Og kan oppnås via f.eks komponenter (hierarkisk system)  
+
  
 
 Kontrollspørsmpl LAB 2

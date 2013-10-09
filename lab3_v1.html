@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-Type" content="text/html" charset="utf-8">
+	<title>Hendelser med jQuery</title>
+<link rel="stylesheet" type="text/css" href="Lab3.css" />
+ <script src="js/jquery-1.8.1.js"></script>
+    <script>
+
+	
+	$(function() {
+		// Setter en "observatør" for keydown hendelse på noden document.body
+	    $(document.body).on('keydown', function(e) {
+		
+		// Sorterer ut de tastetrykkene man ønsker å gi en respons på 
+		//left: 37 up: 38 right: 39 Down: 40
+		// Her brukes det en struktur switch som finnes i de fleste programmeringsspråk
+		
+		var key; 
+		switch (e.which) {
+			// tastekode for venstre pil; responsen er en utskrift til konsollen (innebygd i nettlesere)
+			
+			case 37:
+				// Her og i andre case skal koden for å skrive til innerHTML skrives (deloppgave 0)
+				
+				console.log( 'venstre piltast trykket!' );
+				key = "Venstre piltast er trykket!";
+				break;
+        
+			// tastekode for høyre pil
+			
+			case 39:
+				console.log( 'høyre piltast trykket!' );
+				key="Høyre piltast trykket!";
+				break;
+				
+			case 38:
+			console.log ( 'Opp piltast trykket!' );
+			key="Opp piltast trykket!";
+			break;
+			
+			case 40:
+			console.log (' Ned piltast er trykket!' );
+            key="Ned piltast er trykket!";
+			color="blue";
+			break;  			
+		}
+		
+		
+        $("#keypressed").html(key).addClass("blue");
+
+	
+
+		});
+	});
+	
+	</script>
+</head>
+<body>
+    <p>Testside for å "fange" hendelser fra tastatur.</p>
+	<p>
+		<ul>
+			<li>Bruk helst Google Chrome (norsk versjon).</li> 
+			<li>Trykk høyre museknapp og velg "Inspiser element".</li> 
+			<li>Velg "Console" fra hjelpeverktøyets hovedmenyen.</li>
+		</ul>
+	</p>
+	<p>Man har Console også i andre nettlesere. Bruker du en annen nettleser søk på "JavaScript console" 
+	for din nettleser for å finne ut hvordan du kan bruke det.</p>
+	
+	<!-- Oppgaveløsning skal implementeres her -->
+	
+	<p id="keypressed"></p>
+</body>
+</html>
