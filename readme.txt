@@ -1,3 +1,12 @@
+Filene i mappen LAB4DONE er en webapplikasjon for fremvisning av ulike programmeringsspråk
+LAB4.html - Applikasjonens hovedside
+LAB4.css - gir de ulike elementene i LAB4.html styling
+link_sprite_img - bilde som brukes i HTML
+js - Dynamisk endring av elementer og hendelser i HTML
+
+Kontrollspørsmål:
+Ikke oppgitt i oppgaveteksten for laboppgave 4. 
+
 Filene i denne repositoren er en webapplikasjon for å øve på Jquery og Canvas
 Lab3_v1.html: Reagerer på piltastene opp,ned,venstre,høyre
 Lab3_v2.html: Reagerer på museklikk og displayer resultatene

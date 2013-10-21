@@ -1,0 +1,133 @@
+<!doctype html>
+<html xmlns="http://www.w3.org./1999/xhtml" xml:lang="en">
+
+<head>  
+	<title>LAB4 alfabetisk liste</title>
+	<script src="js/jquery-1.8.1.js" type="text/javascript"></script>
+	<script src="js/jquery.scrollto-1.4.7.js" type="text/javascript"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="lab4.css" />
+<!-- Jquery biblotek gjøres synlig her -->
+<!-- <script src="jquery.scrollto-1.4.7.js"></script> -->
+<script type="text/javascript"> // her implementeres den dynamiske koden //markere valg og rulle den til selektert valg etter ID
+	$(function() {
+		$( ".firstUL li" ).each(function() {
+			$( this ).click(function() {
+				$( ".firstUL li" ).removeClass( "selected" );
+				$( this ).addClass( "selected" );
+				elementClick = $( this ).attr( "id" );
+			
+				// ruller til det selekterte i DOM treet
+				$( ".content-container" ).scrollTo($( "#content-for-"+elementClick), 800);
+			
+				//Endre bakgrunnsfarge
+				$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+				$( ".content-container #content-for-"+elementClick ).css( {'background-color' : '#d2e2fc'} );
+			});
+		}); 
+	
+		//Når tilbakeknappen trykkes, og 'A' markeres og returnerer tilbake til toppen
+		$( '.return-to-top' ).click(function() {
+			$( ".firstUL li" ).each(function() {
+				$( ".firstUL li" ).removeClass( "selected" );
+			});
+			
+			//legge til klasse
+			$( "#a" ).addClass( "selected" );
+			$( ".content-container" ).scrollTo($( "#content-for-a" ), 800);
+				//sette bakgrunnsfarge til hvit
+			$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+			$( ".content-container #content-for-a" ).css( {'background-color' : '#d2e2fc'} );
+		});
+	});		
+
+</script>
+
+</head>
+<body>
+
+<div id="body-container">
+	<div class="glossary-container">
+		<ul class="firstUL">
+			<li id="a" class="selected">A</li>
+			<li id="b">B</li>
+			<li id="c">C</li>
+			<li id="d">D</li>
+			<!-- Flere bokstaver kan legges til her -->
+		</ul>
+	</div>
+
+	<div class="content-container">
+	<!-- A -->
+		<div id="content-for-a" style="background-color:#d2e2fc">
+			<dl>
+				<dt>ActionScript</dt>
+					<dd>ActionScript er et programmeringspråk basert på ECMA Script som blir brukt primært til utvikling av nettsider og programvare 
+						for Adobe Flash player-plattformen, men også i noen databaserapplikasjoner og grunnleggende robotikk.</dd>
+				<dt>AppleScript</dt>
+					<dd>AppleScript er et skript-språk laget av Apple Inc. Og programmet er innebygd i Macintoch operativsystemet siden System 7.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+		</div>	
+	<!-- B --> 
+		<div id="content-for-b">
+			<dl>
+				<dt>BASIC</dt>
+					<dd>BASIC (an acronym for Beginner's All-purpose Symbolic Instruction Code) 
+					is a family of general-purpose, high-level programming languages whose design philosophy emphasizes ease of use.</dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+	</div>
+	<!-- C -->
+		<div id="content-for-c">
+			<dl>
+				<dt>C</dt>
+					<dd>C er et høynivå programmeringsspråk. Med dette språket er det mulig å uttrykke seg maskinært til
+					høynivåspråk å være. Til forskjell fra lavnivåspråkene kan C-kode kompliseres for de fleste maskiner.
+					Siden en både kan uttrykke seg maskinnært og samtidig enkelt flytte programmer mellom ulike maskiner, 
+					kan en si at C inntar et mellomnivå mellom høynivåspråk og lavnivåspråk, som er årsaken til at C av og 
+					til kalles et "portabelt assemblespråk". Språket ble utviklet fra 1969 til 1973 av Dennis Ritchie i forbindelse 
+					med implementasjonen av Unix, og er så anvendelig at det brukes til de fleste oppgaver. Mange andre språk har en 
+					syntaks som ligner på C, slik som Perl og Java, men oppbyggingen av disse språkene er anderledes. Direkte etterfølgere
+					av C er Objective-C og C++. </dd>
+			</dl>
+			<p class="return-to-top">Tilbake til toppen</p>
+	</div>
+	<!-- D -->
+		<div id="content-for-d">
+			<dl>
+				<dt>D</dt>
+					<dd>D er et programmeringsspråk utviklet av Walter Bright. Det tar mål av seg å kombinere ytelse og fleksibilitet
+					fra språk som C og C++, med høynivåfunksjonalitet og programmvennlighet fra språk som Ruby og Pythin. 
+					D er et multiparadigmespråk, og har egne primitiver for å støtte både imperativ, funksjonell, generisk og
+					objektorientert programmering.</dd>
+				<p class="return-to-top">Tilbake til toppen</p>
+		</div>
+	
+	</div>
+</div>
+<!-- Table Title. Skal ikke være med.. I-Think. Hør med Janis/hjelpelærer.
+<table title="Report"> 
+
+<tr>
+<td>1st cell content</td>
+<td>2nd cell content</td>
+<td>3rd cell content</td>
+</tr>
+
+<tr>
+<td>4th cell content</td>
+<td>5th cell content</td>
+<td>6th cell content</td>
+</tr>
+
+</table>
+
+-->
+
+<!-- signatur og dato --> 
+<address> Laget 18.Oktober.2013 <br> 
+Av Minh Nguyen Dinh </address> 
+
+</body>
+</html>
